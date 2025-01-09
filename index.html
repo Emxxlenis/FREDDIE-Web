@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FREDDIE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="translations.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p class="name">FREDDIE</p>
+
+        <ul class="menu" id="nav-list">
+          <li><a href="index.html" data-translate="menu-home"></a></li>
+          <li><a href="freddie.html">FREDDIE</a></li>
+          <li>
+            <a href="impact.html" data-translate="menu-impact"></a>
+          </li>
+          <li>
+            <a href="about.html" data-translate="menu-about-us"></a>
+          </li>
+        </ul>
+
+        <select id="language-selector">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+        <button class="toggle-menu" id="toggle-menu">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="background-div">
+        <p data-translate="home-slogan"></p>
+        <h1 data-translate="home-freddie-title"></h1>
+        <button class="cta-button" data-translate="home-button-title"></button>
+      </div>
+
+      <div class="carousel-container">
+        <button class="carousel-arrow left-arrow">❮</button>
+        <div class="carousel-track">
+          <div class="carousel-card">
+            <div class="card-content">
+              <div class="card-image">
+                <img src="assets\images\home-vision.jpg" alt="Imagen 1" />
+              </div>
+              <div class="card-text">
+                <h2 data-translate="home-vision-title"></h2>
+                <p data-translate="home-vision-subtitle"></p>
+                <button data-translate="home-button-title"></button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-content">
+              <div class="card-image">
+                <img src="assets\images\home-water.jpg" alt="Imagen 2" />
+              </div>
+              <div class="card-text">
+                <h2 data-translate="home-mision-title"></h2>
+                <p data-translate="home-mision-subtitle"></p>
+                <button data-translate="home-button-title"></button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-content">
+              <div class="card-image">
+                <img src="assets\images\home-volunteer.jpg" alt="Imagen 3" />
+              </div>
+              <div class="card-text">
+                <h2 data-translate="home-social-title"></h2>
+                <p data-translate="home-social-subtitle"></p>
+                <button data-translate="home-button-title"></button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <div class="card-content">
+              <div class="card-image">
+                <img src="assets\images\home-tech.jpg" alt="Imagen 4" />
+              </div>
+              <div class="card-text">
+                <h2 data-translate="home-innovation-title"></h2>
+                <p data-translate="home-innovation-subtitle"></p>
+                <button data-translate="home-button-title"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow right-arrow">❯</button>
+      </div>
+      <div class="section-title-container">
+        <h2
+          class="section-title"
+          data-translate="home-freddie-about-title"
+        ></h2>
+        <p
+          class="section-subtitle"
+          data-translate="home-freddie-about-subtitle"
+        ></p>
+      </div>
+      <div class="color-box">
+        <h2
+          class="color-box-title"
+          data-translate="home-freddie-box-title"
+        ></h2>
+        <p
+          class="color-box-subtitle"
+          data-translate="home-freddie-box-subtitle"
+        ></p>
+        <p
+          class="color-box-subtitle"
+          data-translate="home-freddie-box-subtitle-2"
+        ></p>
+        <p
+          class="color-box-subtitle"
+          data-translate="home-freddie-box-subtitle-3"
+        ></p>
+        <video class="color-box-video" autoplay muted loop>
+          <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+      <div class="section-title-container">
+        <h2
+          class="section-title"
+          data-translate="home-freddie-caract-title"
+        ></h2>
+        <p
+          class="section-subtitle"
+          data-translate="home-freddie-caract-subtitle"
+        ></p>
+      </div>
+      <div class="image-text-box">
+        <img
+          src="assets\images\vertical-ejemplo.jpg"
+          alt="Imagen"
+          class="image-box-img"
+        />
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-1"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-1"
+          ></p>
+        </div>
+      </div>
+      <div class="image-text-box-right">
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-2"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-2"
+          ></p>
+        </div>
+        <div class="image-text-box">
+        <video class="image-box-img" autoplay muted loop>
+            <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+        </div>
+      </div>
+      <div class="image-text-box">
+        <img
+          src="assets\images\vertical-ejemplo.jpg"
+          alt="Imagen"
+          class="image-box-img"
+        />
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-3"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-3"
+          >
+          </p>
+        </div>
+      </div>
+      <div class="image-text-box-right">
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-4"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-4"
+          ></p>
+        </div>
+
+        <img
+          src="assets\images\vertical-ejemplo.jpg"
+          alt="Imagen"
+          class="image-box-img"
+        />
+      </div>
+      <div class="image-text-box">
+        <img
+          src="assets\images\vertical-ejemplo.jpg"
+          alt="Imagen"
+          class="image-box-img"
+        />
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-5"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-5"
+          ></p>
+        </div>
+      </div>
+
+      <div class="image-text-box-right">
+        <div class="text-box">
+          <h2
+            class="image-box-title"
+            data-translate="home-freddie-text-box-tittle-6"
+          ></h2>
+          <p
+            class="image-box-subtitle"
+            data-translate="home-freddie-text-box-subtittle-6"
+          ></p>
+        </div>
+
+        <img
+          src="assets\images\vertical-ejemplo.jpg"
+          alt="Imagen"
+          class="image-box-img"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo-section">
+          <img
+            src="assets\images\home-vision.jpg"
+            alt="Logo del proyecto"
+            class="footer-logo"
+          />
+          <h2 class="footer-title">FREDDIE</h2>
+        </div>
+        <div class="contact-info">
+          <p><strong data-translate="footer-phone"></strong> +57 123 456 789</p>
+          <p>
+            <strong data-translate="footer-mail"></strong> contacto@ejemplo.com
+          </p>
+          <p>
+            <strong data-translate="footer-adress"></strong> Calle 123, Ciudad,
+            Colombia
+          </p>
+        </div>
+      </div>
+      <div class="image-credit">
+        <p data-translate="footer-image">
+         
+        </p>
+        <p>&copy; 2025 FREDDIE</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
