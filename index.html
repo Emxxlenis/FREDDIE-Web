@@ -17,37 +17,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FREDDIE</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="translations.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <p class="name">FREDDIE</p>
+        <div class="header-logo">
+          <img
+            src="assets\images\logo.png"
+            alt="Logo del proyecto"
+            class="logo"
+          />
 
+          <p class="name">FREDDIE</p>
+        </div>
         <ul class="menu" id="nav-list">
-          <li><a href="index.html" data-translate="menu-home"></a></li>
-          <li><a href="freddie.html">FREDDIE</a></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="/pages/freddie.html">FREDDIE</a></li>
           <li>
-            <a href="impact.html" data-translate="menu-impact"></a>
+            <a href="/pages/impact.html">Impact</a>
           </li>
           <li>
-            <a href="about.html" data-translate="menu-about-us"></a>
+            <a href="/pages/about.html">About Us</a>
           </li>
         </ul>
-
-        <select id="language-selector">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-        </select>
         <button class="toggle-menu" id="toggle-menu">☰</button>
       </nav>
     </header>
 
     <main>
       <div class="background-div">
-        <p data-translate="home-slogan"></p>
-        <h1 data-translate="home-freddie-title"></h1>
-        <button class="cta-button" data-translate="home-button-title"></button>
+        <p>
+          For a future where clean, disease-free water is a right, not a
+          privilege
+        </p>
+        <h1>
+          The Mercury Pokéball: captures, transforms, and empowers vulnerable
+          communities
+        </h1>
+        <button class="cta-button">Discover More</button>
       </div>
 
       <div class="carousel-container">
@@ -59,9 +66,15 @@
                 <img src="assets\images\home-vision.jpg" alt="Imagen 1" />
               </div>
               <div class="card-text">
-                <h2 data-translate="home-vision-title"></h2>
-                <p data-translate="home-vision-subtitle"></p>
-                <button data-translate="home-button-title"></button>
+                <h2>A Future with Clean and Accessible Water for All</h2>
+                <p>
+                  Our vision is to create a world where everyone, regardless of
+                  their location, has access to clean, contaminant-free, and
+                  safe water. We aim to eliminate inequality in access to
+                  mercury-free potable water and foster a sustainable future for
+                  generations to come.
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </div>
@@ -71,9 +84,15 @@
                 <img src="assets\images\home-water.jpg" alt="Imagen 2" />
               </div>
               <div class="card-text">
-                <h2 data-translate="home-mision-title"></h2>
-                <p data-translate="home-mision-subtitle"></p>
-                <button data-translate="home-button-title"></button>
+                <h2>Transforming Communities Through Water Innovation</h2>
+                <p>
+                  At FREDDIE, our mission is to provide accessible and effective
+                  technological solutions to purify mercury-contaminated water
+                  in vulnerable communities. We aim to improve quality of life,
+                  reduce health risks, and promote a circular economy by reusing
+                  mercury, ensuring a positive and sustainable impact.
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </div>
@@ -83,9 +102,16 @@
                 <img src="assets\images\home-volunteer.jpg" alt="Imagen 3" />
               </div>
               <div class="card-text">
-                <h2 data-translate="home-social-title"></h2>
-                <p data-translate="home-social-subtitle"></p>
-                <button data-translate="home-button-title"></button>
+                <h2>Committed to Community Well-Being</h2>
+                <p>
+                  We are dedicated to working hand in hand with the communities
+                  most affected by water contamination, providing innovative
+                  solutions to improve their health and quality of life. Through
+                  FREDDIE, we seek to reduce structural poverty, improve access
+                  to contaminant-free water, and create sustainable economic
+                  opportunities.
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </div>
@@ -95,9 +121,16 @@
                 <img src="assets\images\home-tech.jpg" alt="Imagen 4" />
               </div>
               <div class="card-text">
-                <h2 data-translate="home-innovation-title"></h2>
-                <p data-translate="home-innovation-subtitle"></p>
-                <button data-translate="home-button-title"></button>
+                <h2>Innovation That Protects People and the Planet</h2>
+                <p>
+                  FREDDIE exemplifies how technology can solve environmental and
+                  social problems. With its modular and efficient design, our
+                  solution not only purifies water but also recycles mercury,
+                  reducing environmental impact and promoting a circular
+                  economy. Sustainable innovation is our commitment to a cleaner
+                  and fairer future.
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </div>
@@ -105,46 +138,48 @@
         <button class="carousel-arrow right-arrow">❯</button>
       </div>
       <div class="section-title-container">
-        <h2
-          class="section-title"
-          data-translate="home-freddie-about-title"
-        ></h2>
-        <p
-          class="section-subtitle"
-          data-translate="home-freddie-about-subtitle"
-        ></p>
+        <h2 class="section-title">About FREDDIE</h2>
+        <p class="section-subtitle">
+          FREDDIE is a portable, self-propelled water treatment system designed
+          to eliminate mercury contamination in aquatic environments. It works
+          by filtering and chemically neutralizing pollutants through a
+          multi-layer structure, ensuring clean and safe water.
+        </p>
       </div>
       <div class="color-box">
-        <h2
-          class="color-box-title"
-          data-translate="home-freddie-box-title"
-        ></h2>
-        <p
-          class="color-box-subtitle"
-          data-translate="home-freddie-box-subtitle"
-        ></p>
-        <p
-          class="color-box-subtitle"
-          data-translate="home-freddie-box-subtitle-2"
-        ></p>
-        <p
-          class="color-box-subtitle"
-          data-translate="home-freddie-box-subtitle-3"
-        ></p>
+        <h2 class="color-box-title">What Is It?</h2>
+        <p class="color-box-subtitle">
+          FREDDIE is an innovative solution designed to transform access to
+          potable water in rural communities near artisanal mining zones. With
+          its advanced technology and modular design, FREDDIE captures mercury
+          from contaminated waters, creating a safer and healthier environment
+          for people.
+        </p>
+        <p class="color-box-subtitle">
+          FREDDIE is an autonomous, portable, and self-propelled device that
+          uses a multi-layer filtration system to chemically neutralize water
+          contaminants, ensuring clean and safe water for consumption. Its
+          modular and scalable design allows implementation in household or
+          community tanks, adapting to local needs without requiring complex
+          infrastructure.
+        </p>
+        <p class="color-box-subtitle">
+          We offer a sustainable, reliable, and easy-to-implement solution that
+          protects not only communities but also the environment, contributing
+          to the reduction of mercury pollution and promoting a healthier future
+          for all.
+        </p>
         <video class="color-box-video" autoplay muted loop>
           <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
       </div>
       <div class="section-title-container">
-        <h2
-          class="section-title"
-          data-translate="home-freddie-caract-title"
-        ></h2>
-        <p
-          class="section-subtitle"
-          data-translate="home-freddie-caract-subtitle"
-        ></p>
+        <h2 class="section-title">Main Features of FREDDIE</h2>
+        <p class="section-subtitle">
+          FREDDIE transforms access to potable water, eliminating mercury
+          contamination and protecting community health
+        </p>
       </div>
       <div class="image-text-box">
         <img
@@ -153,29 +188,31 @@
           class="image-box-img"
         />
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-1"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-1"
-          ></p>
+          <h2 class="image-box-title">Outer Layer</h2>
+          <p class="image-box-subtitle">
+            FREDDIE's outer layer is made of high-density polyethylene (HDPE) or
+            medical-grade PVC, serving as the first barrier against large
+            particles and sediments. With a PTFE (Teflon) coating, it prevents
+            contaminant buildup and enables self-cleaning. Its uniform
+            perforations (1-2 mm) and stainless steel (316L) mesh reinforcement
+            ensure a steady water flow, impact resistance, and durable
+            protection.
+          </p>
         </div>
       </div>
       <div class="image-text-box-right">
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-2"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-2"
-          ></p>
+          <h2 class="image-box-title">First Filtration Sub-Layer</h2>
+          <p class="image-box-subtitle">
+            This sub-layer is designed to trap heavy metals and mercury. It
+            combines sulfurized activated carbon, natural zeolite modified with
+            iron, and Amberlite IRC748 ion-exchange resin. Together, these
+            substances adsorb mercury and other contaminants through specific
+            chemical reactions and ion-exchange processes.
+          </p>
         </div>
         <div class="image-text-box">
-        <video class="image-box-img" autoplay muted loop>
+          <video class="image-box-img" autoplay muted loop>
             <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
           </video>
@@ -188,27 +225,25 @@
           class="image-box-img"
         />
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-3"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-3"
-          >
+          <h2 class="image-box-title">Second Filtration Sub-Layer</h2>
+          <p class="image-box-subtitle">
+            This layer uses zero-valent iron nanoparticles (nZVI) to reduce
+            ionic mercury to its elemental form, which is then trapped on the
+            surface. It also includes treated quartz sand as a physical
+            filtering medium and activated bentonite to trap heavy metals and
+            prevent preferential water flow channels.
           </p>
         </div>
       </div>
       <div class="image-text-box-right">
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-4"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-4"
-          ></p>
+          <h2 class="image-box-title">Chemical Core</h2>
+          <p class="image-box-subtitle">
+            The core consists of a polyethylene chamber containing a specialized
+            mix of sodium thiosulfate, ferric chloride, and modified chitosan.
+            These substances neutralize and stabilize mercury ions, forming
+            non-toxic compounds safely trapped in the core.
+          </p>
         </div>
 
         <img
@@ -224,27 +259,26 @@
           class="image-box-img"
         />
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-5"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-5"
-          ></p>
+          <h2 class="image-box-title">Electrochemical System</h2>
+          <p class="image-box-subtitle">
+            This layer includes a titanium anode coated with ruthenium oxide, an
+            activated carbon cathode, and an ion-selective membrane. The system
+            oxidizes elemental mercury into its ionic form (Hg²⁺), facilitating
+            its capture. The membrane ensures efficient separation of chemical
+            reactions, optimizing purification.
+          </p>
         </div>
       </div>
 
       <div class="image-text-box-right">
         <div class="text-box">
-          <h2
-            class="image-box-title"
-            data-translate="home-freddie-text-box-tittle-6"
-          ></h2>
-          <p
-            class="image-box-subtitle"
-            data-translate="home-freddie-text-box-subtittle-6"
-          ></p>
+          <h2 class="image-box-title">Propulsion and Self-Cleaning Layer</h2>
+          <p class="image-box-subtitle">
+            FREDDIE features small propellers that allow autonomous movement in
+            water, ensuring even coverage. Its spherical design and PTFE coating
+            reduce residue buildup, minimizing maintenance and extending its
+            lifespan.
+          </p>
         </div>
 
         <img
@@ -259,26 +293,22 @@
       <div class="footer-content">
         <div class="logo-section">
           <img
-            src="assets\images\home-vision.jpg"
+            src="assets\images\logo.png"
             alt="Logo del proyecto"
             class="footer-logo"
           />
           <h2 class="footer-title">FREDDIE</h2>
         </div>
         <div class="contact-info">
-          <p><strong data-translate="footer-phone"></strong> +57 123 456 789</p>
-          <p>
-            <strong data-translate="footer-mail"></strong> contacto@ejemplo.com
-          </p>
-          <p>
-            <strong data-translate="footer-adress"></strong> Calle 123, Ciudad,
-            Colombia
-          </p>
+          <p><strong>Phone:</strong> +57 123 456 789</p>
+          <p><strong>Email:</strong> contacto@ejemplo.com</p>
+          <p><strong>Address:</strong> Calle 123, Ciudad, Colombia</p>
         </div>
       </div>
       <div class="image-credit">
-        <p data-translate="footer-image">
-         
+        <p>
+          Images used on this site are from stock photo libraries or owned by
+          us.
         </p>
         <p>&copy; 2025 FREDDIE</p>
       </div>
