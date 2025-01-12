@@ -17,8 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FREDDIE</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets\images\icon.ico" type="image/x-icon">
-
+    <link rel="icon" href="assets\images\icon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -33,13 +32,16 @@
           <p class="name">FREDDIE</p>
         </div>
         <ul class="menu" id="nav-list">
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="/pages/freddie.html">FREDDIE</a></li>
+          <li><a href="index.html"> FREDDIE</a></li>
+          <li><a href="/pages/freddie.html">How to Use?</a></li>
           <li>
             <a href="/pages/impact.html">Impact</a>
           </li>
           <li>
             <a href="/pages/about.html">About Us</a>
+          </li>
+          <li>
+            <a href="/pages/gallery.html">Gallery</a>
           </li>
         </ul>
         <button class="toggle-menu" id="toggle-menu">☰</button>
@@ -56,7 +58,7 @@
           The Mercury Pokéball: captures, transforms, and empowers vulnerable
           communities
         </h1>
-        <button class="cta-button">Discover More</button>
+        <button class="cta-button" onclick="window.location.href='/pages/freddie.html'">Discover More</button>
       </div>
 
       <div class="carousel-container">
@@ -76,7 +78,7 @@
                   mercury-free potable water and foster a sustainable future for
                   generations to come.
                 </p>
-                <button>Discover More</button>
+                <button  onclick="window.location.href='/pages/about.html'">Discover More</button>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@
                   reduce health risks, and promote a circular economy by reusing
                   mercury, ensuring a positive and sustainable impact.
                 </p>
-                <button>Discover More</button>
+                <button  onclick="window.location.href='/pages/about.html'">Discover More</button>
               </div>
             </div>
           </div>
@@ -113,7 +115,7 @@
                   to contaminant-free water, and create sustainable economic
                   opportunities.
                 </p>
-                <button>Discover More</button>
+                <button  onclick="window.location.href='/pages/impact.html'">Discover More</button>
               </div>
             </div>
           </div>
@@ -132,7 +134,7 @@
                   economy. Sustainable innovation is our commitment to a cleaner
                   and fairer future.
                 </p>
-                <button>Discover More</button>
+                <button  onclick="window.location.href='/pages/impact.html'">Discover More</button>
               </div>
             </div>
           </div>
@@ -172,7 +174,7 @@
           for all.
         </p>
         <video class="color-box-video" autoplay muted loop>
-          <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
+          <source src="assets\videos\home-freddie.mp4" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
       </div>
@@ -185,7 +187,7 @@
       </div>
       <div class="image-text-box">
         <img
-          src="assets\images\vertical-ejemplo.jpg"
+          src="assets\images\freddie-verde.png"
           alt="Imagen"
           class="image-box-img"
         />
@@ -204,36 +206,42 @@
       </div>
       <div class="image-text-box-right">
         <div class="text-box">
-          <h2 class="image-box-title">First Filtration Sub-Layer</h2>
+          <h2 class="image-box-title">First Sub-Layer</h2>
           <p class="image-box-subtitle">
-            This sub-layer is designed to trap heavy metals and mercury. It
-            combines sulfurized activated carbon, natural zeolite modified with
-            iron, and Amberlite IRC748 ion-exchange resin. Together, these
-            substances adsorb mercury and other contaminants through specific
-            chemical reactions and ion-exchange processes.
+            In this initial purification stage, water passes through a
+            combination of advanced materials. Sulfurized activated carbon
+            adsorbs mercury and other chemical contaminants through specific
+            reactions. Iron-modified zeolite exchanges ions and retains
+            hazardous particles, while Amberlite resin efficiently captures
+            heavy metals, especially mercury, even in low concentrations. Each
+            material is optimized to work together, achieving highly efficient
+            initial contaminant removal.
           </p>
         </div>
         <div class="image-text-box">
-          <video class="image-box-img" autoplay muted loop>
-            <source src="assets\videos\video-prueba.mp4" type="video/mp4" />
-            Tu navegador no soporta la etiqueta de video.
-          </video>
+          <img
+            src="assets\images\imagen-freddie-1.png"
+            alt="Imagen"
+            class="image-box-img"
+          />
         </div>
       </div>
       <div class="image-text-box">
         <img
-          src="assets\images\vertical-ejemplo.jpg"
+          src="assets\images\imagen-freddie-2.png"
           alt="Imagen"
           class="image-box-img"
         />
         <div class="text-box">
-          <h2 class="image-box-title">Second Filtration Sub-Layer</h2>
+          <h2 class="image-box-title">Second Sub-Layer</h2>
           <p class="image-box-subtitle">
-            This layer uses zero-valent iron nanoparticles (nZVI) to reduce
-            ionic mercury to its elemental form, which is then trapped on the
-            surface. It also includes treated quartz sand as a physical
-            filtering medium and activated bentonite to trap heavy metals and
-            prevent preferential water flow channels.
+            This sub-layer reinforces the purification process using zero-valent
+            iron nanoparticles, which reduce ionic mercury to elemental mercury,
+            chemically trapping it. Quartz sand filters suspended particles and
+            distributes the water flow uniformly, and activated bentonite traps
+            heavy metals within its layers while preventing the formation of
+            preferential flow channels. Together, these technologies remove
+            remaining contaminants before reaching the device’s core.
           </p>
         </div>
       </div>
@@ -241,33 +249,40 @@
         <div class="text-box">
           <h2 class="image-box-title">Chemical Core</h2>
           <p class="image-box-subtitle">
-            The core consists of a polyethylene chamber containing a specialized
-            mix of sodium thiosulfate, ferric chloride, and modified chitosan.
-            These substances neutralize and stabilize mercury ions, forming
-            non-toxic compounds safely trapped in the core.
+            The core is the heart of FREDDIE's chemical process. Here, water
+            comes into contact with a specialized mixture of reactants: sodium
+            thiosulfate, which forms stable complexes with mercury, removing it
+            from the water; ferric chloride, which oxidizes elemental mercury
+            and accelerates chemical reactions; and modified chitosan, which
+            adsorbs heavy metals and stabilizes captured contaminants. These
+            advanced reactions ensure that mercury is completely neutralized and
+            retained.
           </p>
         </div>
 
         <img
-          src="assets\images\vertical-ejemplo.jpg"
+          src="assets\images\imagen-freddie-3.png"
           alt="Imagen"
           class="image-box-img"
         />
       </div>
       <div class="image-text-box">
         <img
-          src="assets\images\vertical-ejemplo.jpg"
+          src="assets\images\imagen-freddie-4.png"
           alt="Imagen"
           class="image-box-img"
         />
         <div class="text-box">
           <h2 class="image-box-title">Electrochemical System</h2>
           <p class="image-box-subtitle">
-            This layer includes a titanium anode coated with ruthenium oxide, an
-            activated carbon cathode, and an ion-selective membrane. The system
-            oxidizes elemental mercury into its ionic form (Hg²⁺), facilitating
-            its capture. The membrane ensures efficient separation of chemical
-            reactions, optimizing purification.
+            FREDDIE incorporates an innovative electrochemical system consisting
+            of a titanium anode with ruthenium oxide, which oxidizes elemental
+            mercury to its ionic form, preparing it for removal; a
+            carbon-activated cathode, which reduces unwanted ionic species and
+            adsorbs contaminants; and an ion-selective membrane, which ensures
+            controlled flow and separates chemical reactions, optimizing
+            efficiency. This system not only enhances mercury removal but also
+            stabilizes the treated water.
           </p>
         </div>
       </div>
@@ -276,15 +291,17 @@
         <div class="text-box">
           <h2 class="image-box-title">Propulsion and Self-Cleaning Layer</h2>
           <p class="image-box-subtitle">
-            FREDDIE features small propellers that allow autonomous movement in
-            water, ensuring even coverage. Its spherical design and PTFE coating
-            reduce residue buildup, minimizing maintenance and extending its
-            lifespan.
+            To maximize its reach, FREDDIE features small internal propellers
+            that allow it to move autonomously in water bodies. This system
+            ensures the device treats wider and harder-to-reach areas,
+            maintaining a constant flow of contaminated water toward its
+            filtering layers. Its portable design makes it an adaptable and
+            efficient solution for various applications.
           </p>
         </div>
 
         <img
-          src="assets\images\vertical-ejemplo.jpg"
+          src="assets\images\freddie-image.png"
           alt="Imagen"
           class="image-box-img"
         />
@@ -302,9 +319,9 @@
           <h2 class="footer-title">FREDDIE</h2>
         </div>
         <div class="contact-info">
-          <p><strong>Phone:</strong> +57 123 456 789</p>
-          <p><strong>Email:</strong> contacto@ejemplo.com</p>
-          <p><strong>Address:</strong> Calle 123, Ciudad, Colombia</p>
+          <p><strong>Phone:</strong> +57 3172791528</p>
+          <p><strong>Email:</strong> elenisd23@gmail.com</p>
+          <p><strong>Address:</strong> Cali, Colombia</p>
         </div>
       </div>
       <div class="image-credit">

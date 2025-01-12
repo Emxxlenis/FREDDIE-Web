@@ -46,13 +46,13 @@ header {
 
 .header-logo{
   display: flex;
-  align-items: center; /* Centra verticalmente */
+  align-items: center; 
   gap: 10px;
   justify-content: center;
 }
 
 .logo{
-  width: 50px; /* Tamaño del logo */
+  width: 50px; 
   height: auto; 
 }
 
@@ -189,9 +189,52 @@ main {
     color: var(--background-color);
   }
 
+  .background-div-freddie {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("assets/images/freddie-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+  }
 
-
-
+  .background-div-impact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("assets/images/impact-freddie.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+  }
+  .background-div-gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("assets/images/gallery.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+  }
 .cta-button {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -233,35 +276,35 @@ main {
   box-sizing: border-box; 
 }
 
-/* Estructura interna de la tarjeta */
+
 .card-content {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
-  max-width: 1200px; /* Limita el ancho máximo de la tarjeta */
-  margin: 0 auto; /* Centra el contenido dentro de la tarjeta */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 3rem;
   gap: 5rem;
 }
 
-/* Estilo de la imagen */
+
 .card-image img {
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Estilo del contenido de texto */
+
 .card-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centra el contenido horizontalmente */
+  align-items: center; 
   text-align: center;
   margin-left: 20px;
   text-align: left;
-  max-width: 50%; /* Limita el ancho del contenido de texto */
+  max-width: 50%; 
   gap: 1.5rem;
 }
 
@@ -293,7 +336,7 @@ main {
   background-color: var(--primary-color);
 }
 
-/* Flechas del carrusel */
+
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -315,152 +358,151 @@ main {
   right: 10px;
 }
 
-/* Estilos para el contenedor del título */
+
 .section-title-container {
   text-align: center;
   padding: 40px 20px;
   margin-top: 20px;
 }
 
-/* Estilo para el título */
+
 .section-title {
-  font-size: 2rem; /* Tamaño del título */
+  font-size: 2rem; 
   font-weight: bold;
-  color: var(--text-color); /* Color del texto */
-  margin-bottom: 10px; /* Espacio debajo del título */
+  color: var(--text-color); 
+  margin-bottom: 10px; 
 }
 
-/* Estilo para el subtítulo */
+
 .section-subtitle {
-  font-size: 1.2rem; /* Tamaño del subtítulo */
-  color: var(--text-color); /* Color del subtítulo */
+  font-size: 1.2rem;
+  color: var(--text-color);
 }
 
-/* Estilo para el cuadro azul */
+
 .color-box {
-  background-color: var(--secondary-color); /* Fondo azul */
-  color: white; /* Color del texto dentro del cuadro */
-  padding: 40px 20px; /* Espacio alrededor del contenido */
-  margin-top: 40px; /* Espacio entre el div anterior y este */
-  display: flex; /* Utilizar flexbox */
-  flex-direction: column; /* Coloca los elementos en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
+  background-color: var(--secondary-color); 
+  color: white;
+  padding: 40px 20px; 
+  margin-top: 40px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .color-box-title {
-  font-size: 2rem; /* Tamaño del título */
+  font-size: 2rem; 
   font-weight: bold;
-  margin-bottom: 10px; /* Espacio debajo del título */
+  margin-bottom: 10px; 
   text-align: left;
 }
 
 .color-box-subtitle {
-  font-size: 1.2rem; /* Tamaño del subtítulo */
-  margin-bottom: 20px; /* Espacio debajo del subtítulo */
-  text-align: left; /* Alinear texto a la izquierda */
-  max-width: 800px; /* Limitar el ancho máximo del texto */
+  font-size: 1.2rem; 
+  margin-bottom: 20px; 
+  text-align: left; 
+  max-width: 800px; 
 }
 
 .color-box-video {
-  width: 100%; /* Asegura que el video ocupe todo el ancho del div */
-  height: auto; /* Mantiene las proporciones del video */
-  border-radius: 10px; /* Esquinas redondeadas */
-  max-width: 600px; /* Tamaño máximo del video más pequeño */
-  margin-top: 20px; /* Espacio por encima del video */
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  max-width: 600px; 
+  margin-top: 20px; 
 }
 
 .image-text-box {
-  display: flex; /* Para que los elementos estén en línea (horizontal) */
-  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-  justify-content: flex-start; /* Alinea todos los elementos al inicio (izquierda) */
-  gap: 20px; /* Espacio entre la imagen y el texto */
-  padding: 20px 7rem; /* Espacio alrededor del contenedor */
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 20px; 
+  padding: 20px 7rem;
 }
 
 .image-box-img {
-  width: 300px; /* Tamaño de la imagen */
-  height: auto; /* Mantener las proporciones de la imagen */
-  border-radius: 8px; /* Bordes redondeados (opcional) */
+  width: 300px; 
+  height: auto; 
+  border-radius: 8px; 
 }
 
 .text-box {
-  display: flex; /* Para alinear el título y subtítulo en columna */
+  display: flex; 
   flex-direction: column;
-  align-items: flex-start; /* Alinea el texto a la izquierda */
+  align-items: flex-start;  
 }
 
 .image-box-title {
-  font-size: 1.5rem; /* Tamaño del título */
+  font-size: 1.5rem;  
   font-weight: bold;
-  margin: 0 0 10px 0; /* Espacio debajo del título */
+  margin: 0 0 10px 0;  
 }
 
 .image-box-subtitle {
-  font-size: 1rem; /* Tamaño del subtítulo */
-  margin: 0; /* Elimina márgenes innecesarios */
+  font-size: 1rem;  
+  margin: 0; 
 }
 
 .image-text-box-right {
-  display: flex; /* Para que los elementos estén en línea (horizontal) */
-  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-  justify-content: space-between; /* Alinea todos los elementos al inicio (izquierda) */
-  gap: 20px; /* Espacio entre la imagen y el texto */
-  padding: 20px 7rem; /* Espacio alrededor del contenedor */
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;  
+  gap: 20px;  
+  padding: 20px 7rem; 
 }
 
-/* Estilos generales del footer */
-.footer {
-  background-color:var(--secondary-color); /* Fondo oscuro */
-  color: var(--background-color); /* Color del texto */
-  padding: 10px 40px; /* Espacio alrededor */
+ .footer {
+  background-color:var(--secondary-color);  
+  color: var(--background-color);  
+  padding: 10px 40px;  
   display: flex;
-  flex-direction: column; /* Organiza en columna */
+  flex-direction: column;  
   align-items: center;
 }
 
 .footer-content {
-  display: flex; /* Para disposición en filas */
-  justify-content: space-between; /* Espacio entre la izquierda y derecha */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  max-width: 1200px; /* Límite de ancho para no hacer el footer demasiado largo */
+  display: flex; 
+  justify-content: space-between;  
+  width: 100%;  
+  max-width: 1200px;  
 }
 
 .logo-section {
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  gap: 10px; /* Espacio entre el logo y el título */
+  align-items: center;  
+  gap: 10px;  
 }
 
 .footer-logo {
-  width: 50px; /* Tamaño del logo */
-  height: auto; /* Mantiene las proporciones del logo */
+  width: 50px;  
+  height: auto; 
 }
 
 .footer-title {
-  font-size: 1.5rem; /* Tamaño del nombre del proyecto */
+  font-size: 1.5rem;  
   font-weight: bold;
-  margin: 0; /* Elimina el margen por defecto */
+  margin: 0;  
 }
 
 .contact-info {
-  text-align: right; /* Alinea el texto a la derecha */
-  font-size: 1rem; /* Tamaño de la fuente */
+  text-align: right;  
+  font-size: 1rem;  
 }
 
 .contact-info h3 {
-  font-size: 1.2rem; /* Tamaño del título */
-  margin-bottom: 10px; /* Espacio debajo del título */
+  font-size: 1.2rem;  
+  margin-bottom: 10px;  
 }
 
 .contact-info p {
-  margin: 5px 0; /* Espacio entre los párrafos */
+  margin: 5px 0;  
 }
 
 .image-credit {
-  text-align: left; /* Centra la nota de las imágenes */
-  font-size: 0.9rem; /* Tamaño de fuente pequeño */
-  margin-top: 20px; /* Espacio encima */
+  text-align: left;  
+  font-size: 0.9rem;  
+  margin-top: 20px;  
   align-items: flex-start;
   display: flex;
   gap: 5px;
@@ -513,39 +555,39 @@ main {
 
 
 
-/* Media query para pantallas pequeñas */
+ 
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column; /* En pantallas pequeñas, organiza en columna */
-    align-items: center; /* Centra los elementos */
-    gap: 5px; /* Menos espacio entre los bloques */
+    flex-direction: column;  
+    align-items: center;  
+    gap: 5px;  
   }
 
   .contact-info {
-    text-align: center; /* Centra la información de contacto en móviles */
+    text-align: center;  
   }
 
   .footer-logo {
-    width: 40px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    width: 40px;  
   }
 
   .footer-title {
-    font-size: 1.2rem; /* Reduce el tamaño del nombre en móviles */
+    font-size: 1.2rem;  
   }
 
   .contact-info p {
-    font-size: 0.9rem; /* Ajusta el tamaño de la fuente en móviles */
+    font-size: 0.9rem;  
   }
 
   .image-credit {
-    font-size: 0.8rem; /* Ajusta el tamaño de la nota de las imágenes */
+    font-size: 0.8rem;  
     margin-top: 0px;
   }
 }
 
-/* Ajustes responsivos */
+ 
 @media (max-width: 768px) {
-  /* En pantallas pequeñas, la imagen va arriba */
+ 
 
   .carousel-container {
     height: 100vh;
@@ -563,7 +605,7 @@ main {
   }
 
   .card-image img {
-    width: 100%; /* La imagen ocupa todo el ancho */
+    width: 100%; 
     height: auto;
     margin-bottom: 10px;
   }
@@ -578,32 +620,32 @@ main {
 
   .image-text-box,
   .image-text-box-right {
-    flex-direction: column; /* Coloca los elementos en columna en lugar de fila */
+    flex-direction: column;  
     padding: 20px 1rem;
   }
 }
 
 @media (min-width: 769px) {
-  /* Para pantallas grandes, las tarjetas tienen imagen a la izquierda y texto a la derecha */
+   
   .card-content {
-    flex-direction: row; /* Asegura que la imagen esté a la izquierda y el texto a la derecha */
-    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: row;  
+    align-items: center;  
   }
 
   .card-text {
     text-align: left;
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
-    max-width: 50%; /* Limita el ancho del texto para que no ocupe toda la tarjeta */
+    margin-left: 20px;  
+    max-width: 50%;  
   }
 
   .card-image img {
-    width: 350px; /* Puedes ajustar el tamaño de la imagen */
+    width: 350px;  
     height: 350px;
     margin-right: 20px;
   }
 
   .carousel-arrow {
-    top: 50%; /* Las flechas siempre se posicionan en el centro */
+    top: 50%;  
     transform: translateY(-50%);
     padding: 20px;
   }

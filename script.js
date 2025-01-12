@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    // Hover effect for team member bios
     const teamMembers = document.querySelectorAll('.member');
     teamMembers.forEach(member => {
         member.addEventListener('mouseenter', () => {
@@ -34,16 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
 
-  //translation
-
   
 
 
-// Seleccionar los elementos
 const toggleMenuButton = document.getElementById('toggle-menu');
 const menu = document.getElementById('nav-list');
 
-// Agregar evento para mostrar/ocultar el menú
 toggleMenuButton.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
@@ -56,12 +50,10 @@ const carouselTrack = document.querySelector('.carousel-track');
 const carouselCards = document.querySelectorAll('.carousel-card');
 const totalCards = carouselCards.length;
 
-// Función para mover el carrusel
 function moveCarousel() {
   carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Función para manejar las flechas
 function moveToNext() {
   currentIndex = (currentIndex + 1) % totalCards;
   moveCarousel();
@@ -72,23 +64,16 @@ function moveToPrev() {
   moveCarousel();
 }
 
-// Mover el carrusel automáticamente
-let autoMove = setInterval(moveToNext, 7000);
+let autoMove = setInterval(moveToNext, 10000);
 
-// Función para reiniciar la animación después de cambiar el tamaño
 function resetCarouselOnResize() {
-  // Cancelamos el movimiento automático si el tamaño cambia
   clearInterval(autoMove);
-  // Luego reiniciamos el carrusel
   currentIndex = 0;
   moveCarousel();
-  // Reiniciamos el auto-movimiento
-  autoMove = setInterval(moveToNext, 7000);
+  autoMove = setInterval(moveToNext, 10000);
 }
 
-// Detectamos cuando la ventana cambia de tamaño
 window.addEventListener('resize', resetCarouselOnResize);
 
-// Manejadores de las flechas
 document.querySelector('.left-arrow').addEventListener('click', moveToPrev);
 document.querySelector('.right-arrow').addEventListener('click', moveToNext);
